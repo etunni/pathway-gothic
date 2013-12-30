@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ygrave" format="1">
+  <advance width="374"/>
+  <unicode hex="1EF2"/>
+  <outline>
+    <component  base="Y"/>
+    <component  base="grave" xOffset="43" yOffset="160"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="0" width="56" />
+      <hstem pos="645" width="-21" />
+      <hstem pos="674" width="56" />
+      <hstem pos="827" width="-20" />
+      <vstem pos="255" width="72" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="radical" format="1">
+  <advance width="462"/>
+  <unicode hex="221A"/>
+  <outline>
+    <contour>
+      <point x="132" y="324" type="line" name="hr00"/>
+      <point x="52" y="324" type="line"/>
+      <point x="147" y="-180" type="line"/>
+      <point x="245" y="-180" type="line"/>
+      <point x="415" y="758" type="line"/>
+      <point x="520" y="758" type="line"/>
+      <point x="520" y="822" type="line"/>
+      <point x="347" y="822" type="line"/>
+      <point x="196" y="-56" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-159" width="-21" />
+      <hstem pos="758" width="64" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

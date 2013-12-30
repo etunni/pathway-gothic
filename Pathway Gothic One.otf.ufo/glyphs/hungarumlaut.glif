@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hungarumlaut" format="1">
+  <advance width="358"/>
+  <unicode hex="02DD"/>
+  <outline>
+    <contour>
+      <point x="63" y="634" type="line" name="hr00"/>
+      <point x="92" y="602" type="line"/>
+      <point x="201" y="698" type="line"/>
+      <point x="157" y="758" type="line"/>
+    </contour>
+    <contour>
+      <point x="200" y="634" type="line"/>
+      <point x="229" y="602" type="line"/>
+      <point x="338" y="698" type="line"/>
+      <point x="294" y="758" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="623" width="-21" />
+      <hstem pos="758" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

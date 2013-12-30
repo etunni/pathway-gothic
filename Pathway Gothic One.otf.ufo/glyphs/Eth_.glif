@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Eth" format="1">
+  <advance width="406"/>
+  <unicode hex="00D0"/>
+  <outline>
+    <contour>
+      <point x="16" y="324" type="line"/>
+      <point x="221" y="324" type="line"/>
+      <point x="221" y="376" type="line"/>
+      <point x="16" y="376" type="line"/>
+    </contour>
+    <component  base="D"/>
+    <component  base="barra" xScale="0.85" xOffset="-43" yOffset="8"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="324" width="52" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

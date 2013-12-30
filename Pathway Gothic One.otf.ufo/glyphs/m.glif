@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="m" format="1">
+  <advance width="587"/>
+  <unicode hex="006D"/>
+  <outline>
+    <contour>
+      <point x="63" y="0" type="line"/>
+      <point x="140" y="0" type="line"/>
+      <point x="140" y="279" type="line" smooth="yes"/>
+      <point x="140" y="417" smooth="yes"/>
+      <point x="166" y="493" smooth="yes"/>
+      <point x="212" y="493" type="curve" smooth="yes"/>
+      <point x="243" y="493" smooth="yes"/>
+      <point x="258" y="453" smooth="yes"/>
+      <point x="258" y="368" type="curve" smooth="yes"/>
+      <point x="258" y="0" type="line"/>
+      <point x="335" y="0" type="line"/>
+      <point x="335" y="279" type="line" smooth="yes"/>
+      <point x="335" y="417" smooth="yes"/>
+      <point x="360" y="493" smooth="yes"/>
+      <point x="406" y="493" type="curve" smooth="yes"/>
+      <point x="438" y="493" smooth="yes"/>
+      <point x="453" y="453" smooth="yes"/>
+      <point x="453" y="368" type="curve" smooth="yes"/>
+      <point x="453" y="0" type="line"/>
+      <point x="530" y="0" type="line"/>
+      <point x="530" y="341" type="line" smooth="yes"/>
+      <point x="530" y="490" smooth="yes"/>
+      <point x="498" y="555" smooth="yes"/>
+      <point x="424" y="555" type="curve" smooth="yes"/>
+      <point x="372" y="555"/>
+      <point x="339" y="522"/>
+      <point x="325" y="457" type="curve"/>
+      <point x="311" y="524" smooth="yes"/>
+      <point x="280" y="555" smooth="yes"/>
+      <point x="229" y="555" type="curve" smooth="yes"/>
+      <point x="176" y="555"/>
+      <point x="143" y="521"/>
+      <point x="130" y="455" type="curve"/>
+      <point x="110" y="540" type="line" name="hr01"/>
+      <point x="63" y="540" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr01">
+      <hstem pos="21" width="-21" />
+      <hstem pos="540" width="-20" />
+      <vstem3 stem3List="63,77,258,77,453,77" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>
