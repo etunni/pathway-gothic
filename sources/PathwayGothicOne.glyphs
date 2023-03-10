@@ -27,6 +27,11 @@ automatic = 1;
 code = "languagesystem DFLT dflt;
 
 languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CRT;
+languagesystem latn KAZ;
+languagesystem latn TAT;
+languagesystem latn TRK;
 languagesystem latn ROM;
 languagesystem latn MOL;
 languagesystem latn CAT;
@@ -47,8 +52,18 @@ feature ordn;
 tag = aalt;
 },
 {
-automatic = 1;
-code = "lookup ccmp_latn_1 {
+code = "lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	@CombiningNonTopAccents = [cedillacomb ogonekcomb];
+	sub [i j]' @CombiningTopAccents by [idotless jdotless];
+	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
+    @SoftDotted = [i j];
+	@SoftDottedDotless = [idotless jdotless idotless jdotless];
+	sub iogonek' @CombiningTopAccents by idotless ogonekcomb;
+	sub iogonek' @CombiningNonTopAccents @CombiningTopAccents by idotless ogonekcomb;
+} ccmp_Other_1;
+
+lookup ccmp_latn_1 {
 	sub fi by f i;
 	sub fl by f l;
 } ccmp_latn_1;
@@ -62,6 +77,20 @@ tag = ccmp;
 automatic = 1;
 code = "lookup locl_latn_0 {
 	script latn;
+	language AZE;
+	sub i by idotaccent;
+	language CRT;
+	sub i by idotaccent;
+	language KAZ;
+	sub i by idotaccent;
+	language TAT;
+	sub i by idotaccent;
+	language TRK;
+	sub i by idotaccent;
+} locl_latn_0;
+
+lookup locl_latn_1 {
+	script latn;
 	language ROM;
 	sub Scedilla by Scommaaccent;
 	sub scedilla by scommaaccent;
@@ -72,14 +101,14 @@ code = "lookup locl_latn_0 {
 	sub scedilla by scommaaccent;
 	sub Tcedilla by Tcommaaccent;
 	sub tcedilla by tcommaaccent;
-} locl_latn_0;
+} locl_latn_1;
 
-lookup locl_latn_1 {
+lookup locl_latn_2 {
 	script latn;
 	language CAT;
 	sub  l' periodcentered' l by ldot;
 	sub  L' periodcentered' L by Ldot;
-} locl_latn_1;
+} locl_latn_2;
 ";
 tag = locl;
 },
@@ -115,9 +144,16 @@ tag = sinf;
 },
 {
 automatic = 1;
-code = "sub one by onesuperior;
+code = "sub zero by zerosuperior;
+sub one by onesuperior;
 sub two by twosuperior;
 sub three by threesuperior;
+sub four by foursuperior;
+sub five by fivesuperior;
+sub six by sixsuperior;
+sub seven by sevensuperior;
+sub eight by eightsuperior;
+sub nine by ninesuperior;
 ";
 tag = sups;
 },
@@ -230,11 +266,11 @@ size = -15;
 },
 {
 name = typoAscender;
-value = 740;
+value = 954;
 },
 {
 name = typoDescender;
-value = -180;
+value = -198;
 },
 {
 name = typoLineGap;
@@ -254,11 +290,11 @@ value = 0;
 },
 {
 name = winAscent;
-value = 954;
+value = 1004;
 },
 {
 name = winDescent;
-value = 198;
+value = 222;
 },
 {
 name = strikeoutPosition;
@@ -33043,20 +33079,23 @@ kerningLTR = {
 master01 = {
 "@MMK_L_A" = {
 "@MMK_R_T" = -29;
+"@MMK_R_V" = -22;
+"@MMK_R_W" = -14;
 "@MMK_R_Y" = -43;
 "@MMK_R_quotedbl" = -50;
 "@MMK_R_quotedblright" = -50;
 "@MMK_R_v" = -7;
-"@MMK_R_V" = -22;
-"@MMK_R_W" = -14;
 };
 "@MMK_L_L" = {
 "@MMK_R_T" = -43;
+"@MMK_R_V" = -36;
+"@MMK_R_W" = -29;
 "@MMK_R_Y" = -50;
 "@MMK_R_quotedbl" = -72;
 "@MMK_R_quotedblright" = -72;
-"@MMK_R_V" = -36;
-"@MMK_R_W" = -29;
+};
+"@MMK_L_R" = {
+"@MMK_R_v" = -14;
 };
 "@MMK_L_T" = {
 "@MMK_R_A" = -29;
@@ -33066,6 +33105,16 @@ master01 = {
 "@MMK_R_period" = -43;
 "@MMK_R_u" = -22;
 AE = -36;
+};
+"@MMK_L_V" = {
+"@MMK_R_A" = -22;
+"@MMK_R_o" = -22;
+"@MMK_R_period" = -36;
+};
+"@MMK_L_W" = {
+"@MMK_R_A" = -14;
+"@MMK_R_o" = -14;
+"@MMK_R_period" = -29;
 };
 "@MMK_L_Y" = {
 "@MMK_R_A" = -43;
@@ -33085,42 +33134,29 @@ AE = -65;
 AE = -65;
 };
 F = {
-AE = -32;
 "@MMK_R_A" = -22;
+AE = -32;
 };
 K = {
 "@MMK_R_v" = -22;
 };
 P = {
-AE = -32;
 "@MMK_R_A" = -22;
+AE = -32;
 };
 f = {
+"@MMK_R_quotedbl" = 36;
 asterisk = 36;
 braceright = 40;
 bracketright = 40;
 parenright = 40;
-"@MMK_R_quotedbl" = 36;
 };
 f.alt = {
+"@MMK_R_quotedbl" = 36;
 asterisk = 36;
 braceright = 40;
 bracketright = 40;
 parenright = 40;
-"@MMK_R_quotedbl" = 36;
-};
-"@MMK_L_V" = {
-"@MMK_R_A" = -22;
-"@MMK_R_o" = -22;
-"@MMK_R_period" = -36;
-};
-"@MMK_L_W" = {
-"@MMK_R_A" = -14;
-"@MMK_R_o" = -14;
-"@MMK_R_period" = -29;
-};
-"@MMK_L_R" = {
-"@MMK_R_v" = -14;
 };
 };
 };
