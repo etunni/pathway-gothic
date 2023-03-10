@@ -11021,7 +11021,8 @@ unicode = 509;
 },
 {
 glyphname = b;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 anchors = (
@@ -11890,7 +11891,8 @@ unicode = 240;
 {
 glyphname = dcaron;
 kernLeft = o;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernRight = lcaron;
+lastChange = "2023-03-10 13:56:25 +0000";
 layers = (
 {
 background = {
@@ -13825,7 +13827,8 @@ unicode = 289;
 },
 {
 glyphname = h;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:30 +0000";
 layers = (
 {
 anchors = (
@@ -13910,7 +13913,8 @@ unicode = 104;
 },
 {
 glyphname = hbar;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 background = {
@@ -13980,7 +13984,8 @@ unicode = 295;
 },
 {
 glyphname = hcircumflex;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 background = {
@@ -14854,7 +14859,8 @@ unicode = 309;
 },
 {
 glyphname = k;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 anchors = (
@@ -14919,7 +14925,8 @@ unicode = 107;
 },
 {
 glyphname = kcommaaccent;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 background = {
@@ -15041,7 +15048,8 @@ unicode = 312;
 },
 {
 glyphname = l;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 anchors = (
@@ -15098,7 +15106,8 @@ unicode = 108;
 },
 {
 glyphname = lacute;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 background = {
@@ -15144,7 +15153,9 @@ unicode = 314;
 },
 {
 glyphname = lcaron;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+kernRight = lcaron;
+lastChange = "2023-03-10 13:56:17 +0000";
 layers = (
 {
 background = {
@@ -15193,7 +15204,8 @@ unicode = 318;
 },
 {
 glyphname = lcommaaccent;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 background = {
@@ -15242,7 +15254,8 @@ unicode = 316;
 },
 {
 glyphname = ldot;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 background = {
@@ -15288,7 +15301,8 @@ unicode = 320;
 },
 {
 glyphname = lslash;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 background = {
@@ -17165,7 +17179,8 @@ unicode = 112;
 },
 {
 glyphname = thorn;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 anchors = (
@@ -18247,7 +18262,8 @@ unicode = 537;
 },
 {
 glyphname = germandbls;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernLeft = h;
+lastChange = "2023-03-10 13:56:04 +0000";
 layers = (
 {
 anchors = (
@@ -18552,7 +18568,8 @@ unicode = 359;
 {
 glyphname = tcaron;
 kernLeft = m;
-lastChange = "2023-03-10 13:28:35 +0000";
+kernRight = lcaron;
+lastChange = "2023-03-10 13:56:50 +0000";
 layers = (
 {
 background = {
@@ -33124,6 +33141,9 @@ AE = -36;
 "@MMK_R_o" = -43;
 "@MMK_R_period" = -36;
 "@MMK_R_u" = -14;
+};
+"@MMK_L_lcaron" = {
+"@MMK_R_h" = 30;
 };
 "@MMK_L_quotedbl" = {
 "@MMK_R_A" = -50;
